@@ -23,6 +23,21 @@ public class Examen {
         int asignaturas = scanner.nextInt();
         System.out.println("Cursa " + asignaturas + " asignaturas.");
 
+        if (asignaturas < 1) {
+            System.out.println("No es un numero valido de asignaturas.");
+        } else if (asignaturas >= 1 && asignaturas <= 10) {
+            System.out.println("Numero valido de asignaturas.");
+        } else if (asignaturas > 10) {
+            System.out.println("No es un numero valido de asignaturas.");
+        }
+        
+        if (asignaturas < 1) {
+            asignaturas = 0;
+        } 
+        else if (asignaturas > 10) {
+            asignaturas = 0;
+        }
+        
         scanner.close();
     }
     
