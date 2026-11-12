@@ -8,7 +8,14 @@ public class Examen {
         System.out.println("Examen parcial PRG1");
         System.out.print("Ingrese su edad: ");
         edad = scanner.nextInt();
-        System.out.println("Su edad es: " + edad);
+
+        if (edad >= 18) {
+            System.out.println("Usted es mayor de edad.");
+        } else {
+            System.out.println("Usted es menor de edad.");
+        }
+
+        scanner.close();
     }
     
 }
