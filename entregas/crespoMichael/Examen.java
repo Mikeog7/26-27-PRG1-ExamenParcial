@@ -19,6 +19,10 @@ public class Examen {
             System.out.println("La edad es valida");
         }
 
+        System.out.print("Cuantas asignaturas cursa? ");
+        int asignaturas = scanner.nextInt();
+        System.out.println("Cursa " + asignaturas + " asignaturas.");
+
         scanner.close();
     }
     
