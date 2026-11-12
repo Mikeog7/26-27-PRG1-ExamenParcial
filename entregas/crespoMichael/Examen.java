@@ -38,6 +38,15 @@ public class Examen {
             asignaturas = 0;
         }
         
+        System.out.print("Ingrese la nota de cada asignatura: ");
+        
+        int NOTAS[] = new int[asignaturas];
+        
+        for (int i = 0; i < asignaturas; i++) {
+            System.out.print("Ingrese la nota de la asignatura " + (i + 1) + ": ");
+            NOTAS[i] = scanner.nextInt();
+        }
+
         scanner.close();
     }
     
