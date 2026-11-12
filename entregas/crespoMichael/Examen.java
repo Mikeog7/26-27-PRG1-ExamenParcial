@@ -47,6 +47,16 @@ public class Examen {
             NOTAS[i] = scanner.nextInt();
         }
 
+        double promedio;
+
+        promedio = 0;
+        for (int i = 0; i < asignaturas; i++) {
+            promedio += NOTAS[i];
+        }
+        promedio = promedio / asignaturas;
+
+        System.out.println("El promedio de las notas es: " + promedio);
+
         scanner.close();
     }
     
