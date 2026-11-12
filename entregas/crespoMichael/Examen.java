@@ -63,10 +63,10 @@ public class Examen {
                 System.out.println("El alumno reprueba la asignatura " + (i + 1) + " con nota: " + NOTAS[i]);
 
                 int reprobadas = i++;
-                System.out.println("El reprueba " + reprobadas + "asignaturas.");
+                System.out.println("El reprueba " +  " " + reprobadas + "asignaturas.");
                 
             } else {
-                System.out.println("El alumno aprueba la asignatura " + (i + 1) + " con nota: " + NOTAS[i]);
+                System.out.println("El alumno aprueba la asignatura " + " " + (i + 1) + " con nota: " + NOTAS[i]);
                 int aprobadas = i++;
                 System.out.println("El aprueba " + aprobadas + "asignaturas.");
             }
