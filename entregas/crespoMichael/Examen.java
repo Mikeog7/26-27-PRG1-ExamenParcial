@@ -57,6 +57,31 @@ public class Examen {
 
         System.out.println("El promedio de las notas es: " + promedio);
 
+
+        for (int i = 0; i < asignaturas; i++) {
+            if (NOTAS[i] < 5) {
+                System.out.println("El alumno reprueba la asignatura " + (i + 1) + " con nota: " + NOTAS[i]);
+
+                int reprobadas = i++;
+                System.out.println("El reprueba " + reprobadas + "asignaturas.");
+                
+            } else {
+                System.out.println("El alumno aprueba la asignatura " + (i + 1) + " con nota: " + NOTAS[i]);
+                int aprobadas = i++;
+                System.out.println("El aprueba " + aprobadas + "asignaturas.");
+            }
+            
+
+            
+        }
+
+        if (promedio >= 5) {
+            System.out.println("El alumno aprueba.");
+        } else {
+            System.out.println("El alumno reprueba.");
+        }
+
+
         scanner.close();
     }
     
